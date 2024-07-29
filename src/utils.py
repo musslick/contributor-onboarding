@@ -16,7 +16,7 @@ def sum(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     Returns:
     float the sum of a and b
     '''
-    return a - b
+    return a + b
 
 
 def multiply(a, b) -> float:
