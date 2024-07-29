@@ -13,7 +13,3 @@ def test_modulo_by_hand():
     result = a - (int(a/b) * b)
 
     assert modulo(a, b) == result
-
-if __name__ == "__main__":
-    test_modulo()
-    test_modulo_by_hand()
