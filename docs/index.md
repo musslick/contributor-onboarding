@@ -424,7 +424,7 @@ To do this, navigate to the Settings -> GitHub Pages. For "Source", select "Depl
 For "Branch", select "gh-pages". Click "Save".
 
 
-5. Publishing your Package on PyPi
+## Publishing your Package on PyPi
 
 Here, we will simulate how to publish your code as an actual PyPi package.
 However, we will not actually publish the code to PyPi, but rather to the test PyPi server.
