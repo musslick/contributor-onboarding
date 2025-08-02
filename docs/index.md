@@ -430,9 +430,9 @@ Here, we will simulate how to publish your code as an actual PyPi package.
 However, we will not actually publish the code to PyPi, but rather to the test PyPi server.
 
 1. The owner of the GitHub repository should first create a PyPi account.
-They then need to create a PyPi API token. This token should be stored as a secret in the GitHub repository.
+They then need to create a PyPi API token.
 
-2. Next they need to add the token to the GitHub secrets.
+2. Next they need to add the token as a secret in the GitHub repository..
    - Navigate to your GitHub repository.
    - Go to `Settings` > `Secrets and variables` > `Actions`.
    - Click `New repository secret`.
