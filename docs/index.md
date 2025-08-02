@@ -74,7 +74,7 @@ The team leader will have to execute the following steps on their machine:
 
    If your repository uses a different branch name, replace `main` with the correct branch name.
 
-### Option 2: Forking the Practice Repository
+### Option 2: Forking the Practice Repository (Preferred)
 
 *Note: If you choose this option, other members of the team will be able to contribute to the working repository 
 but do not have the ability to manage the repository settings. There are a number of *
@@ -133,6 +133,11 @@ git clone repository_url
 ```
 4. You now have a copy of the repository on your computer.
 
+### Option 3: Open the repository in GitHub Codespaces
+1. Open the forked repository (the one you created)
+2. Click on the green button "Code"
+3. Click on "Open in codespaces"
+
 ## Create a Virtual Environment
 
 It is a good practice to create a virtual environment for each project you work on.
@@ -145,6 +150,11 @@ Here, we will create a virtual environment for the project in Python.
 ```bash
 python3.9 -m venv venv
 ```
+Note: if this doesn't work, try 
+```bash
+python -m venv venv
+```
+
 4. Activate the virtual environment:
 ```bash
 source venv/bin/activate
