@@ -324,7 +324,7 @@ Once the issue is fixed, students should create a pull request to merge their br
 1. Go to the repository on GitHub.
 2. Click the "Pull requests" tab.
 3. Click the "New pull request" button.
-4. Select the branch you want to merge into the main branch.
+4. Select the branch you want to merge into the main branch. IMPORTANT: Do not select the original repository but your own (the fork). 
 5. Enter a title and description for the PR.
 6. Fill out the PR template.
 7. Assign reviewers to the PR.
