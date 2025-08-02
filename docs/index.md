@@ -133,7 +133,7 @@ git clone repository_url
 ```
 4. You now have a copy of the repository on your computer.
 
-### Option 3: Open the repository in GitHub Codespaces
+### Option 3: Open the repository in GitHub Codespaces (Preferred)
 1. Open the forked repository (the one you created)
 2. Click on the green button "Code"
 3. Click on "Open in codespaces"
@@ -240,13 +240,19 @@ Each student should then create a new branch for their issue:
 5. Enter a name for your branch (e.g., `fix/sum-function`).
 6. Click the "Create Branch" button.
 
-#### Option 2: Via GitHub
+#### Option 2: Via GitHub Repository Page
 
 1. Go to the repository on GitHub.
 2. Click the "Code" tab.
 3. Click the "main" branch dropdown.
 4. Enter a name for your branch (e.g., `fix/sum-function`).
 5. Click the "Create branch" button.
+
+#### Option 2: Via GitHub Issues (Preferred)
+1. Go to the repository on GitHub.
+2. Click the "Issues" tab.
+3. Click the issue you want to address.
+4. In the right column, under "Development", click "Create a branch".
  
 ### Fix the Issue
 
