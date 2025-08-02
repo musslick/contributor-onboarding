@@ -362,6 +362,8 @@ Unit tests are a way to ensure that your code works as expected.
 
 ### Writing Unit Tests
 
+First, create an issue for a test you want to add. Then follow the procedure above (create a branch for the issue, then checkout that branch). 
+
 To write a unit test, you need to create a new file in the `tests` directory with the name `test_<module>.py`, 
 where `<module>` is the name of the module you want to test. See the example in the repo. 
 
