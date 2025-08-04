@@ -1,0 +1,1784 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="resources/github-basics/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Contributor Onboarding</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hello" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Contributor Onboarding" class="md-header__button md-logo" aria-label="Contributor Onboarding" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Contributor Onboarding
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/musslick/contributor-onboarding" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Contributor Onboarding" class="md-nav__button md-logo" aria-label="Contributor Onboarding" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Contributor Onboarding
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/musslick/contributor-onboarding" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Create a repository
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="* Create a repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-mirroring-the-practice-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Mirroring the Practice Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-forking-the-practice-repository-preferred" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Forking the Practice Repository (Preferred)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-contributors-to-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Contributors to the Repository
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-a-repository-to-your-local-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloning a Repository to Your Local Machine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloning a Repository to Your Local Machine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-cloning-with-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Cloning with GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-cloning-with-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Cloning with git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3-open-the-repository-in-github-codespaces-preferred" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 3: Open the repository in GitHub Codespaces (Preferred)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-virtual-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Virtual Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#have-a-look-at-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Have a look at the repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Enable Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create An Issue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addressing-issues-through-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Addressing Issues Through Pull Requests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Addressing Issues Through Pull Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-branch-protection-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      *Adding Branch Protection Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-branch-for-your-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Branch for Your Issue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a Branch for Your Issue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-via-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Via GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-via-github-repository-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Via GitHub Repository Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-via-github-issues-preferred" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Via GitHub Issues (Preferred)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fix-the-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fix the Issue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-changes-to-your-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commit Changes to Your Branch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commit Changes to Your Branch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-via-github-desktop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Via GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Git
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-changes-to-your-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push Changes to Your Branch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Push Changes to Your Branch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-via-github-desktop_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Via GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Git
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-pull-request-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Pull Request (PR)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a Pull Request (PR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pr-via-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      PR Via GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pr-via-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      PR Via GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-reviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Reviews
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Reviews">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reviewing-a-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reviewing a PR
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unit Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-unit-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Unit Tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automated Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-automated-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      *Enable Automated Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-the-test-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add the Test Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publishing-your-package-on-pypi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publishing your Package on PyPi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resources/github-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Basics of GitHub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Create a repository
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="* Create a repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-mirroring-the-practice-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Mirroring the Practice Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-forking-the-practice-repository-preferred" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Forking the Practice Repository (Preferred)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-contributors-to-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Contributors to the Repository
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-a-repository-to-your-local-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloning a Repository to Your Local Machine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloning a Repository to Your Local Machine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-cloning-with-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Cloning with GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-cloning-with-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Cloning with git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3-open-the-repository-in-github-codespaces-preferred" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 3: Open the repository in GitHub Codespaces (Preferred)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-virtual-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Virtual Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#have-a-look-at-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Have a look at the repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Enable Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create An Issue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addressing-issues-through-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Addressing Issues Through Pull Requests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Addressing Issues Through Pull Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-branch-protection-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      *Adding Branch Protection Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-branch-for-your-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Branch for Your Issue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a Branch for Your Issue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-via-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Via GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-via-github-repository-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Via GitHub Repository Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-via-github-issues-preferred" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Via GitHub Issues (Preferred)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fix-the-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fix the Issue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-changes-to-your-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commit Changes to Your Branch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commit Changes to Your Branch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-via-github-desktop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Via GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Git
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-changes-to-your-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push Changes to Your Branch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Push Changes to Your Branch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-via-github-desktop_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Via GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Git
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-pull-request-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Pull Request (PR)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a Pull Request (PR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pr-via-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      PR Via GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pr-via-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      PR Via GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-reviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Reviews
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Reviews">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reviewing-a-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reviewing a PR
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unit Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-unit-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Unit Tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automated Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-automated-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      *Enable Automated Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-the-test-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add the Test Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publishing-your-package-on-pypi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publishing your Package on PyPi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="hello">Hello!</h1>
+<h2 id="requirements">Requirements</h2>
+<h3 id="general-requirements">General Requirements</h3>
+<p>Software development is a team effort. Each team member has a role to play in the development process. 
+Here, we will simulate a software development team as you may find it both in industry or academia. 
+The team consists of a team leader and team members. 
+The team leader is responsible for setting up and managing the repository.</p>
+<p><strong>Sections marked with an asterix (*)</strong> are meant to be executed only by the team leader. These sections typically involve 
+one-time tasks, such as setting up a branch protection rule. 
+If you choose to mirror the practice repo instead of forking it (see below), you can rotate the team leader role every
+time an Asterix appears in the documentation. It is recommended that the first team leader is the one who is most 
+experienced with git. </p>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<p>Each student in the group should meet the following requirements:</p>
+<h4 id="required">Required</h4>
+<ul>
+<li>A <a href="https://github.com/join">Github account</a>.</li>
+<li><a href="https://git-scm.com/downloads">Git</a> installed on your computer.</li>
+<li><a href="https://www.python.org/downloads/">Python3</a> installed on your computer</li>
+</ul>
+<h4 id="recommended">Recommended:</h4>
+<ul>
+<li><a href="https://desktop.github.com/download/">GitHub Desktop</a> installed on your computer</li>
+<li><a href="https://www.jetbrains.com/pycharm/download/other.html]">Pycharm Community Edition</a> installed on your computer</li>
+</ul>
+<h2 id="create-a-repository">* Create a repository</h2>
+<p>First, we need to create a repository for subsequent exercises in which we 
+can practice open-source software development as a team. </p>
+<p>There are two options here:</p>
+<h3 id="option-1-mirroring-the-practice-repository">Option 1: Mirroring the Practice Repository</h3>
+<p>Here, we create a simple copy of the practice repo by mirroring it. 
+The team leader will have to execute the following steps on their machine:</p>
+<ol>
+<li>
+<p><strong>Create a new repository on GitHub:</strong>
+   Go to your GitHub account and create a new repository. Don't add any README or license, just add an empty repository.
+   Name the repository <code>contributor-onboarding</code>.</p>
+</li>
+<li>
+<p><strong>Clone the original repository to your local machine:</strong>
+   Open your terminal or command prompt and run the following command to clone the repository:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/AutoResearch/contributor-onboarding.git
+</code></pre></div>
+<ol>
+<li>
+<p><strong>Change into the cloned repository directory:</strong>
+   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>contributor-onboarding
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Remove the original remote (optional, but recommended to avoid confusion):</strong>
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>remove<span class="w"> </span>origin
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Add your own repository as the new remote:</strong>
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/YOURGITHUBUSERNAME/contributor-onboarding.git
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Push the code to your own repository:</strong>
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div></p>
+</li>
+</ol>
+<p>If your repository uses a different branch name, replace <code>main</code> with the correct branch name.</p>
+<h3 id="option-2-forking-the-practice-repository-preferred">Option 2: Forking the Practice Repository (Preferred)</h3>
+<p>*Note: If you choose this option, other members of the team will be able to contribute to the working repository 
+but do not have the ability to manage the repository settings. There are a number of *</p>
+<p>Here, we mimic a practice in 
+open-source development where there is some existing project (https://github.com/AutoResearch/contributor-onboarding) and
+we want to contribute to a major feature as a team. To do that, we'll have to fork the repo, i.e., create our
+own copy of it which is linked to the original project.</p>
+<ol>
+<li>Go to the repository you want to fork: https://github.com/AutoResearch/contributor-onboarding</li>
+<li>Click the "Fork" button in the upper right corner of the page.</li>
+<li>Select your username as the destination for the fork.</li>
+<li>You may add a description to the fork if you wish.</li>
+<li>Check the box "Copy the <code>main</code> branch only".</li>
+<li>Click the "Create Fork" button.</li>
+<li>You now have a copy of the repository in your account.</li>
+</ol>
+<h3 id="add-contributors-to-the-repository">Add Contributors to the Repository</h3>
+<p>As a next step we will add all students in the team as contributors. 
+You will need the GitHub usernames of all students in your team.</p>
+<ol>
+<li>Go to the repository on GitHub you want to add contributors to. This is the repository you just created.</li>
+<li>Click the "Settings" tab.</li>
+<li>Click the "Manage access" button.</li>
+<li>Click the "Invite a collaborator" button.</li>
+<li>Enter the username of the person you want to add as a contributor.</li>
+<li>Note: For this exercise, you will want to give the person "Maintain" access. However, if you are on a forked repo, you may not have that option.</li>
+<li>Click the "Add [username] to this repository" button.</li>
+<li>The person you added will receive an email invitation to contribute to the repository.</li>
+<li>Once they accept the invitation, they will be able to contribute to the repository.</li>
+</ol>
+<p><em>Hint: You can also add contributors by adding their GitHub username to the <code>CONTRIBUTORS.md</code> file in the repository.</em></p>
+<h2 id="cloning-a-repository-to-your-local-machine">Cloning a Repository to Your Local Machine</h2>
+<h3 id="option-1-cloning-with-github-desktop">Option 1: Cloning with GitHub Desktop</h3>
+<p><em>Note: You may have to log into your GitHub account from GitHub Desktop before you can clone a repository. 
+You may also need to give GitHub Desktop permission to access your GitHub account.</em> </p>
+<ol>
+<li>Open GitHub Desktop.</li>
+<li>Click the "File" menu and select "Clone Repository".</li>
+<li>Select the "URL" tab.</li>
+<li>Paste the URL of the repository you want to clone.</li>
+<li>Choose a local path for the repository.</li>
+<li>Click the "Clone" button.</li>
+<li>You now have a copy of the repository on your computer.</li>
+</ol>
+<h3 id="option-2-cloning-with-git">Option 2: Cloning with git</h3>
+<ol>
+<li>Open a terminal.</li>
+<li>Navigate to the directory where you want to clone the repository.</li>
+<li>Run the following command:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>repository_url
+</code></pre></div></li>
+<li>You now have a copy of the repository on your computer.</li>
+</ol>
+<h3 id="option-3-open-the-repository-in-github-codespaces-preferred">Option 3: Open the repository in GitHub Codespaces (Preferred)</h3>
+<ol>
+<li>Open the forked repository (the one you created)</li>
+<li>Click on the green button "Code"</li>
+<li>Click on "Open in codespaces"</li>
+</ol>
+<h2 id="create-a-virtual-environment">Create a Virtual Environment</h2>
+<p>It is a good practice to create a virtual environment for each project you work on.
+This ensures that the dependencies for each project are isolated from each other.
+Here, we will create a virtual environment for the project in Python.</p>
+<ol>
+<li>Open a terminal.</li>
+<li>Navigate to the directory where you cloned the repository.</li>
+<li>
+<p>Run the following command to create a virtual environment:
+<div class="highlight"><pre><span></span><code>python3.9<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+</code></pre></div>
+Note: if this doesn't work, try 
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+</code></pre></div></p>
+</li>
+<li>
+<p>Activate the virtual environment:
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+</code></pre></div></p>
+</li>
+<li>You should see <code>(venv)</code> in your terminal prompt, indicating that the virtual environment is active.</li>
+<li>Upgrade pip
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</code></pre></div></li>
+<li>Install the project dependencies:
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>--editable<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
+</code></pre></div></li>
+</ol>
+<p>Now you can use this environment to run code for your project in PyCharm. 
+Note that you will want to configure PyCharm to use this environment for your project.</p>
+<h2 id="have-a-look-at-the-repository">Have a look at the repository</h2>
+<p>Next, all students should have a look at the repository. The main code is in the <code>src</code> directory.</p>
+<h2 id="managing-issues">Managing Issues</h2>
+<p>Issues are a way to track tasks, enhancements, and bugs for your repository. 
+You might have noticed that the code in the existing repository has a number of issues.
+Let's go ahead and enlist them. But first, you have to enable issues in your repository.</p>
+<h3 id="enable-issues">* Enable Issues</h3>
+<ol>
+<li>Go to the repository on GitHub you just created.</li>
+<li>Click the "Settings" tab.</li>
+<li>Scroll down to the "Features" section.</li>
+<li>Check the box "Issues".</li>
+</ol>
+<h3 id="create-an-issue">Create An Issue</h3>
+<p>Now, let's create some issues for the repository.</p>
+<ol>
+<li>Go to the repository on GitHub.</li>
+<li>Click the "Issues" tab.</li>
+<li>Click the "New issue" button.'</li>
+<li>Enter a title and description for the issue.</li>
+<li>You may also enter labels and assignees if you wish.</li>
+<li>Click the "Submit new issue" button.</li>
+</ol>
+<p>Here are some examples but feel free to create your own. 
+You may use some of the TODO comments in the code as inspiration:
+- the sum function does not work with float variables
+- the divide function doesn't check for zero division
+- the element-wise multiplication function doesn't check for vector shape compatibility
+- ...</p>
+<h2 id="addressing-issues-through-pull-requests">Addressing Issues Through Pull Requests</h2>
+<p>Now that you have created some issues, it's time to address them.
+But we don't want to address them in the main branch directly. 
+In fact, we want to protect the main branch from direct pushes so that 
+all changes are made through pull requests. This ensures that all changes are reviewed before 
+they are merged into the main branch.</p>
+<h3 id="adding-branch-protection-rules">*Adding Branch Protection Rules</h3>
+<ol>
+<li>Go to the repository on GitHub you want to add branch protection rules to. This is the repository you just forked.</li>
+<li>Click the "Settings" tab.</li>
+<li>Click the "Branches" tab.</li>
+<li>Click the "Add classic branch protection rule" link.</li>
+<li>Enter the name of the branch you want to protect. For this exercise, you will want to protect the <code>main</code> branch.</li>
+<li>Check the box "Require pull request reviews before merging".</li>
+<li>Check the box "Require approvals".</li>
+<li>Enter the number of approvals required. For this exercise, you will want to require two approvals.</li>
+</ol>
+<h3 id="create-a-branch-for-your-issue">Create a Branch for Your Issue</h3>
+<p>Students should now assign themselves to issues (ideally one student per issue). 
+Each student should then create a new branch for their issue:</p>
+<h4 id="option-1-via-github-desktop">Option 1: Via GitHub Desktop</h4>
+<ol>
+<li>Open GitHub Desktop.</li>
+<li>Click the "Current Repository" menu and select the repository you want to work on.</li>
+<li>Click the "Current Branch" dropdown.</li>
+<li>Click the "New Branch" button.</li>
+<li>Enter a name for your branch (e.g., <code>fix/sum-function</code>).</li>
+<li>Click the "Create Branch" button.</li>
+</ol>
+<h4 id="option-2-via-github-repository-page">Option 2: Via GitHub Repository Page</h4>
+<ol>
+<li>Go to the repository on GitHub.</li>
+<li>Click the "Code" tab.</li>
+<li>Click the "main" branch dropdown.</li>
+<li>Enter a name for your branch (e.g., <code>fix/sum-function</code>).</li>
+<li>Click the "Create branch" button.</li>
+</ol>
+<h4 id="option-2-via-github-issues-preferred">Option 2: Via GitHub Issues (Preferred)</h4>
+<ol>
+<li>Go to the repository on GitHub.</li>
+<li>Click the "Issues" tab.</li>
+<li>Click the issue you want to address.</li>
+<li>In the right column, under "Development", click "Create a branch".</li>
+</ol>
+<h3 id="fix-the-issue">Fix the Issue</h3>
+<p>Now, students should fix the issue in their branch.</p>
+<h3 id="commit-changes-to-your-branch">Commit Changes to Your Branch</h3>
+<p>Once the issue is fixed, students should commit their changes to their branch.</p>
+<h4 id="option-1-via-github-desktop_1">Option 1: Via GitHub Desktop</h4>
+<ol>
+<li>Open GitHub Desktop.</li>
+<li>Click the "Current Repository" menu and select the repository you want to work on.</li>
+<li>Click the "Current Branch" dropdown.</li>
+<li>Select the branch you want to commit to.</li>
+<li>Make your changes in the code.</li>
+<li>Click the "Commit to main" button.</li>
+<li>Enter a summary and description for the commit.</li>
+<li>Click the "Commit to main" button.</li>
+</ol>
+<h4 id="option-2-git">Option 2: Git</h4>
+<ol>
+<li>Open a terminal.</li>
+<li>Navigate to the repository directory.</li>
+<li>Run the following command to stage your changes:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>name_of_fixed_file
+</code></pre></div></li>
+<li>Run the following command to commit your changes:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;description of fix&quot;</span>
+</code></pre></div></li>
+</ol>
+<h3 id="push-changes-to-your-branch">Push Changes to Your Branch</h3>
+<p>Once the changes are committed, students should push their branch to the repository.</p>
+<h4 id="option-1-via-github-desktop_2">Option 1: Via GitHub Desktop</h4>
+<ol>
+<li>Open GitHub Desktop.</li>
+<li>Click the "Current Repository" menu and select the repository you want to work on.</li>
+<li>Click the "Current Branch" dropdown.</li>
+<li>Select the branch you want to push.</li>
+<li>Click the "Push origin" button.</li>
+</ol>
+<h4 id="option-2-git_1">Option 2: Git</h4>
+<ol>
+<li>Open a terminal.</li>
+<li>Navigate to the repository directory.</li>
+<li>Run the following command to push your branch:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>name_of_your_branch
+</code></pre></div></li>
+</ol>
+<h3 id="create-a-pull-request-pr">Create a Pull Request (PR)</h3>
+<p>Once the issue is fixed, students should create a pull request to merge their branch into the main branch.</p>
+<h4 id="pr-via-github-desktop">PR Via GitHub Desktop</h4>
+<ol>
+<li>Open GitHub Desktop.</li>
+<li>Click the "Current Repository" menu and select the repository you want to work on.</li>
+<li>Click the "Current Branch" dropdown.</li>
+<li>Select the branch you want to merge into the main branch.</li>
+<li>Click the "Pull Request" button.</li>
+</ol>
+<h4 id="pr-via-github">PR Via GitHub</h4>
+<ol>
+<li>Go to the repository on GitHub.</li>
+<li>Click the "Pull requests" tab.</li>
+<li>Click the "New pull request" button.</li>
+<li>Select the branch you want to merge into the main branch. IMPORTANT: Do not select the original repository but your own (the fork). </li>
+<li>Enter a title and description for the PR.</li>
+<li>Fill out the PR template.</li>
+<li>Assign reviewers to the PR.</li>
+<li>Click the "Create pull request" button.</li>
+</ol>
+<h2 id="code-reviews">Code Reviews</h2>
+<p>Once a pull request (PR) is created, other students should review the code changes.
+Each PR should have at least two reviewers. You can assign reviewers in the PR itself.</p>
+<h3 id="reviewing-a-pr">Reviewing a PR</h3>
+<ol>
+<li>Go to the repository on GitHub.</li>
+<li>Click the "Pull requests" tab.</li>
+<li>Click the PR you want to review.</li>
+<li>Review the changes in the PR.</li>
+<li>Add comments to the PR if you have any feedback.</li>
+</ol>
+<p>If you are satisfied with the changes, you can approve the PR.</p>
+<ol>
+<li>Click the "Approve" button.</li>
+<li>You may add any additional comments, e.g., congratulate them on the great code they wrote.</li>
+</ol>
+<p>If you are concerned about the changes, you can request changes from the author.</p>
+<ol>
+<li>Click the "Request changes" button.</li>
+<li>Enter a reason for the requested changes.</li>
+</ol>
+<p>Once all reviewers have approved the PR, the author can merge the PR into the main branch.</p>
+<h2 id="unit-tests">Unit Tests</h2>
+<p>Unit tests are a way to ensure that your code works as expected.</p>
+<h3 id="writing-unit-tests">Writing Unit Tests</h3>
+<p>First, create an issue for a test you want to add. Then follow the procedure above (create a branch for the issue, then checkout that branch). </p>
+<p>To write a unit test, you need to create a new file in the <code>tests</code> directory with the name <code>test_&lt;module&gt;.py</code>, 
+where <code>&lt;module&gt;</code> is the name of the module you want to test. See the example in the repo. </p>
+<p>You may want to create some more issues to propose individual tests. </p>
+<p>Follow the PR process above to then add those tests.</p>
+<h2 id="automated-testing">Automated Testing</h2>
+<p>Writing tests is great, but running them manually can be time-consuming.
+Ideally, we should run all tests automatically whenever a new change is proposed to the codebase.</p>
+<h3 id="enable-automated-testing">*Enable Automated Testing</h3>
+<p>The first thing we need to do is to enable automated testing in the repository.</p>
+<ol>
+<li>To enable automated unit tests, go to the repository on GitHub.</li>
+<li>Click the "Actions" tab.</li>
+<li>Click the "I understand workflows, go ahead and enable them" button.</li>
+</ol>
+<h3 id="add-the-test-workflow">Add the Test Workflow</h3>
+<p>Now, we need to add a test workflow to the repository. 
+To do this, simply rename the <code>test-pytest.yml.disabled</code> file in the <code>.github/workflows</code> 
+directory to <code>test-pytest.yml</code>.</p>
+<p>Of course, this should be done via a PR and code review.</p>
+<p>Once the test workflow is enabled, all tests will run automatically whenever a new PR is created.</p>
+<h2 id="automated-documentation">Automated Documentation</h2>
+<p>Documentation is an important part of any software project. You may have noticed a folder in your repository
+called <code>docs</code>. This folder contains the documentation for the project.</p>
+<p>Here, we will enable automated documentation generation using mkdocs. We will automatically generate a documentation
+every time a code is pushed to the main branch.</p>
+<ol>
+<li>
+<p>First, we want to add the relevant GitHub username to the <code>mkdocs.yml</code> file:
+<div class="highlight"><pre><span></span><code>repo_url: &#39;https://github.com/GITHUBUSERNAME/contributor-onboarding&#39;
+</code></pre></div></p>
+</li>
+<li>
+<p>Now we want to enable the publication workflow. 
+You can do this by changing the name of the file <code>docs-publish.yml.disabled</code> in the <code>.github/workflows</code> 
+directory to <code>docs-publish.yml</code>.</p>
+</li>
+<li>
+<p>Now we want to update the documentation links for our project in the <code>pyproject.toml</code> file. 
+To do this, add the corresponding GitHub repository link to the <code>documentation</code> section of the file.
+<div class="highlight"><pre><span></span><code>[project.urls]
+repository = &quot;https://github.com/GITHUBUSERNAME/contributor-onboarding&quot;
+documentation = &quot;https://GITHUBUSERNAME.github.io/contributor-onboarding/&quot;
+</code></pre></div></p>
+</li>
+<li>
+<p>Finally, we need to make sure the documentation can be built in the repository. 
+To do this, navigate to the Settings -&gt; GitHub Pages. For "Source", select "Deploy from Branch". 
+For "Branch", select "gh-pages". Click "Save".</p>
+</li>
+</ol>
+<h2 id="publishing-your-package-on-pypi">Publishing your Package on PyPi</h2>
+<p>Here, we will simulate how to publish your code as an actual PyPi package.
+However, we will not actually publish the code to PyPi, but rather to the test PyPi server.</p>
+<ol>
+<li>
+<p>The owner of the GitHub repository should first create a PyPi account.
+They then need to create a PyPi API token.</p>
+</li>
+<li>
+<p>Next they need to add the token as a secret in the GitHub repository..</p>
+</li>
+<li>Navigate to your GitHub repository.</li>
+<li>Go to <code>Settings</code> &gt; <code>Secrets and variables</code> &gt; <code>Actions</code>.</li>
+<li>Click <code>New repository secret</code>.</li>
+<li>
+<p>Add a new secret with the name <code>TEST_PYPI_API_TOKEN</code> and the value of your Test PyPI token.</p>
+</li>
+<li>
+<p>Now, we need to enable the publication workflow. 
+You can do this by changing the name of the file <code>python-publish.yml.disabled</code> in the <code>.github/workflows</code>
+directory to <code>python-publish.yml</code>.</p>
+</li>
+<li>
+<p>Now, you can create a new release in the repository. </p>
+</li>
+<li>Go to the repository on GitHub.</li>
+<li>Click the "Releases" tab.</li>
+<li>Click the "Draft a new release" button.</li>
+<li>Enter a tag version (e.g., v0.1.0).</li>
+<li>Enter a title and description for the release.</li>
+<li>Click the "Publish release" button.</li>
+</ol>
+<p><strong>Congratulations, you published your first pip package!</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+    
+  </body>
+</html>
