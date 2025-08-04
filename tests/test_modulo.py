@@ -6,5 +6,6 @@ def test_modulo():
     c = 0
 
     assert modulo(a, b) == 1
+    assert modulo(b, a) == 2
     assert modulo(b, b) == 0
     assert modulo(c, b) == 0
