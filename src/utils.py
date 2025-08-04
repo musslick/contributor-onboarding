@@ -55,10 +55,7 @@ def modulo(a: int, b: int):
     float
     '''
 
-    # I think this could be made more efficient?
-    result = a - (np.floor(a / b) * b)
-
-    return result
+    return a%b
 
 def element_wise_multiply(a: np.array, b: np.array) -> np.array:
     '''
@@ -76,7 +73,8 @@ def element_wise_multiply(a: np.array, b: np.array) -> np.array:
 
     return np.multiply(a, b)
 
-def return_hexadecimal(a: int) -> float:
+# change output type of return_hexadecimal function
+def return_hexadecimal(a: int) -> str:
     '''
     ...
 
@@ -103,4 +101,4 @@ def return_random_number(a: int, b:int) -> int:
     float
     '''
 
-    return np.random.randint(a, b)
+return np.random.randint(a, b)
