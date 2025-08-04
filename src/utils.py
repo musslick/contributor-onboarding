@@ -54,9 +54,8 @@ def modulo(a: int, b: int):
     Returns:
     float
     '''
-
-    # I think this could be made more efficient?
-    result = a - (np.floor(a / b) * b)
+    
+    result = a%b
 
     return result
 
