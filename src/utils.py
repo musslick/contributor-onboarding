@@ -17,7 +17,8 @@ def sum(a: int, b: int) -> int:
     '''
     return a + b
 
-def multiply(a, b) -> float:
+#add input types for multiply function
+def multiply(a: float, b:float) -> float:
     '''
     This function returns the product of two numbers
 
