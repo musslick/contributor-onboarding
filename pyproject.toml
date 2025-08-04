@@ -24,8 +24,8 @@ test = [
 ]
 
 [project.urls]
-repository = "https://github.com/GITHUBUSERNAME/contributor-onboarding"
-documentation = "https://GITHUBUSERNAME.github.io/contributor-onboarding/"
+repository = "https://github.com/musslick/contributor-onboarding"
+documentation = "https://musslick.github.io/contributor-onboarding/"
 
 [build-system]
 requires = ["setuptools", "setuptools_scm"]
