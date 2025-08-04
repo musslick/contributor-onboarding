@@ -54,10 +54,8 @@ def modulo(a: int, b: int):
     Returns:
     float
     '''
-    
-    result = a%b
 
-    return result
+    return a%b
 
 def element_wise_multiply(a: np.array, b: np.array) -> np.array:
     '''
