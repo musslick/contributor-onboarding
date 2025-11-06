@@ -33,6 +33,7 @@ def multiply(a, b) -> float:
 
 def divide(a: float, b: float) -> float:
     '''
+    This function divides one number by another.
     ...
 
     Args:
