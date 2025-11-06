@@ -3,7 +3,7 @@ import numpy as np
 
 # TODO: make all functions work with strings as well
 # TODO: add a new cool calculator function
-# TODO: something todo
+# TODO: something todo and another todo
 
 def sum(a: int, b: int) -> int:
     '''
