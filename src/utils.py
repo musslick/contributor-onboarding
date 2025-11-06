@@ -1,5 +1,6 @@
 from typing import Optional
 import numpy as np
+import warnings
 
 # TODO: make all functions work with strings as well
 # TODO: add a new cool calculator function
@@ -41,6 +42,9 @@ def divide(a: float, b: float) -> float:
     Returns:
     float
     '''
+    if b == 0:
+        warnings.warn("Division by zero detected. Returning infinity. This is bad.", UserWarning)
+        return float('inf')
     return a / b
 
 def modulo(a: int, b: int):
