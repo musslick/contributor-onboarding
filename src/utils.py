@@ -41,6 +41,10 @@ def divide(a: float, b: float) -> float:
     Returns:
     float
     '''
+    if b == 0:
+        import warnings
+        warnings.warn("Division by zero detected. Returning infinity.", UserWarning)
+        return float('inf')
     return a / b
 
 def modulo(a: int, b: int):
