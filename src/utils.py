@@ -43,7 +43,7 @@ def divide(a: float, b: float) -> float:
     float
     '''
     if b == 0:
-        warnings.warn("Division by zero detected. Returning infinity.", UserWarning)
+        warnings.warn("Division by zero detected. Returning infinity. This is bad.", UserWarning)
         return float('inf')
     return a / b
 
